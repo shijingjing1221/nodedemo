@@ -1,7 +1,1394 @@
+section.block(data-name='block-explained')
+  h2#documentation.section-title.red(data-type='anchor') New Components
+  .row
+    .col-xs-12.col-sm-6.col-md-offset-2.col-md-4
+      .app-block.app-block-step
+        .title Download
+        .content
+          i.fa.fa-download.featured
+          p
+            | Download the appropriate high_cpu_*.tar.gz script from
+            a(href='#') How do I identify high CPU utilization by Java threads on Linux/Solaris
+    .col-xs-12.col-sm-6.col-md-4
+      .app-block.app-block-step
+        .title Run the Script
+        .content
+          i.fa.fa-code.featured
+          p Run the script per instructions on the solution.
+  .row.row-tall
+    .col-sm-12
+      h2.title.text-center
+        strong Drag and drop the resulting high-cpu.out and high-cpu-tdump.out
+  .row.row-tall
+    .col-xs-12.col-sm-6.col-md-offset-1.col-md-5
+      .dropzone
+        input(type='file', style='display: none')
+        i.fa.fa-arrow-down
+        span Drop the top high-cpu.out here
+    .col-xs-12.col-sm-6.col-md-5
+      .dropzone
+        input(type='file', style='display: none')
+        i.fa.fa-arrow-down
+        span Drop the top high-cpu-tdump.output here
+section.block(data-name='block-explained')
+  h2#documentation.section-title.red(data-type='anchor') Documentation
+  .app-block
+    h2.title App Block Guided (example markup)
+    .content
+      button.btn.btn-default(type='button') Default
+      button.btn.btn-primary(type='button') Primary
+      button.btn.btn-success(type='button') Success
+      button.btn.btn-info(type='button') Info
+      button.btn.btn-warning(type='button') Warning
+      button.btn.btn-danger(type='button') Danger
+      button.btn.next(type='button') Link
+      button.btn.btn-prev(type='button') Prev
+      button.btn.btn-next(type='button') Next
+section.block(data-name='block-explained')
+  h2#documentation.section-title.red(data-type='anchor') Documentation
+  .app-block.app-block-guided
+    h2.title App Block Guided (example markup)
+    .content
+      .row
+        .col-sm-6
+          label(for='multi') Multi-switch
+          input(type='text', name='multi-single')
+        .col-sm-6
+          label(for='multi') Multi-switch
+          input(type='text', name='multi-single')
+h2#common-layouts.section-title.red(data-type='anchor') Common Layouts
+.app-block
+  .title Forms
+  .content
+    h2.section-title Basic Example
+    .row
+      .col-xs-12
+        .row
+          .col-sm-6
+            select
+              option(value='Default Option') Please Choose an Option
+              option(value='') Test
+              option(value='') Testing 2
+              option(value='')
+              option(value='')
+              | 											option
+    // /.row
+    .row
+      .col-lg-6
+        .input-group
+          span.input-group-addon
+            input(type='checkbox')
+          input.form-control(type='text')
+        // /input-group
+      // /.col-lg-6
+      .col-lg-6
+        .input-group
+          span.input-group-addon
+            input(type='radio')
+          input.form-control(type='text')
+        // /input-group
+      // /.col-lg-6
+    // /.row
+    .row
+      .col-lg-6
+        .input-group
+          span.input-group-btn
+            button.btn.btn-default(type='button') Go!
+          input.form-control(type='text')
+        // /input-group
+      // /.col-lg-6
+      .col-lg-6
+        .input-group
+          input.form-control(type='text')
+          span.input-group-btn
+            button.btn.btn-default(type='button') Go!
+        // /input-group
+      // /.col-lg-6
+    // /.row
+    .row
+      .col-lg-6
+        .input-group
+          .input-group-btn
+            button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+              | Action
+              span.caret
+            ul.dropdown-menu(role='menu')
+              li
+                a(href='#') Action
+              li
+                a(href='#') Another action
+              li
+                a(href='#') Something else here
+              li.divider
+              li
+                a(href='#') Separated link
+          // /btn-group
+          input.form-control(type='text')
+        // /input-group
+      // /.col-lg-6
+      .col-lg-6
+        .input-group
+          input.form-control(type='text')
+          .input-group-btn
+            button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+              | Action
+              span.caret
+            ul.dropdown-menu.dropdown-menu-right(role='menu')
+              li
+                a(href='#') Action
+              li
+                a(href='#') Another action
+              li
+                a(href='#') Something else here
+              li.divider
+              li
+                a(href='#') Separated link
+          // /btn-group
+        // /input-group
+      // /.col-lg-6
+    // /.row
+    .row
+      .col-xs-12
+        .input-group
+          .input-group-btn
+            button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+              | Action
+              span.caret
+            ul.dropdown-menu.dropdown-menu-right(role='menu')
+              li
+                a(href='#') Action
+              li
+                a(href='#') Another action
+              li
+                a(href='#') Something else here
+              li.divider
+              li
+                a(href='#') Separated link
+          input.form-control(type='text')
+        .input-group
+          input.form-control(type='text')
+          .input-group-btn
+            button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+              | Action
+              span.caret
+            ul.dropdown-menu.dropdown-menu-right(role='menu')
+              li
+                a(href='#') Action
+              li
+                a(href='#') Another action
+              li
+                a(href='#') Something else here
+              li.divider
+              li
+                a(href='#') Separated link
+    // /.row
+    .row
+      .col-xs-12
+        ul.nav.nav-pills
+          li.active
+            a(href='#') Home
+          li
+            a(href='#') Profile
+          li
+            a(href='#') Messages
+        ul.nav.nav-pills.nav-stacked
+          li.active
+            a(href='#') Home
+          li
+            a(href='#') Profile
+          li
+            a(href='#') Messages
+        ul.nav.nav-pills.nav-justified
+          li.active
+            a(href='#') Home
+          li
+            a(href='#') Profile
+          li
+            a(href='#') Messages
+        ul.nav.nav-pills.nav-justified(role='tablist')
+          li.active
+            a(href='#') Home
+          li.disabled
+            a(href='#') Profile
+          li
+            a(href='#') Messages
+    // /.row
+    .row
+      .col-xs-12
+        form(role='form')
+          .form-group
+            label(for='exampleInputEmail1') Email address
+            input#exampleInputEmail1.form-control(type='email', placeholder='Enter email')
+          .form-group
+            label(for='exampleInputPassword1') Password
+            input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+          .form-group
+            label(for='exampleInputFile') File input
+            input#exampleInputFile(type='file')
+            p.help-block Example block-level help text here.
+          .checkbox
+            label
+              input(type='checkbox')
+              |  Check me out
+          button.btn.btn-default(type='submit') Submit
+    // /.row
+    h2.section-title Inline Forms
+    .row
+      .col-xs-12
+        form.form-inline(role='form')
+          .form-group
+            label.sr-only(for='exampleInputEmail2') Email address
+            input#exampleInputEmail2.form-control(type='email', placeholder='Enter email')
+          .form-group
+            .input-group
+              .input-group-addon @
+              input.form-control(type='email', placeholder='Enter email')
+          .form-group
+            label.sr-only(for='exampleInputPassword2') Password
+            input#exampleInputPassword2.form-control(type='password', placeholder='Password')
+          .checkbox
+            label
+              input(type='checkbox')
+              |  Remember me
+          button.btn.btn-default(type='submit') Sign in
+    // /.row
+    h2.section-title Horizontal Forms
+    .row
+      .col-xs-12
+        form.form-horizontal(role='form')
+          .form-group
+            label.col-sm-2.control-label(for='inputEmail3') Email
+            .col-sm-10
+              input#inputEmail3.form-control(type='email', placeholder='Email')
+          .form-group
+            label.col-sm-2.control-label(for='inputPassword3') Password
+            .col-sm-10
+              input#inputPassword3.form-control(type='password', placeholder='Password')
+          .form-group
+            .col-sm-offset-2.col-sm-10
+              .checkbox
+                label
+                  input(type='checkbox')
+                  |  Remember me
+          .form-group
+            .col-sm-offset-2.col-sm-10
+              button.btn.btn-default(type='submit') Sign in
+    // /.row
+    h2.section-title(data-type='anchor') Standard Input Types
+    .row
+      .col-xs-12
+        label(for='first-input') Standard Input
+        input(name='first-input', placeholder='First Input')
+        label(for='textarea') Standard Textarea
+        textarea(name='input', placeholder='First Input')
+    // /.row
+    h2.section-title(data-type='anchor') Checkboxes / Checkboxes Configurations
+    .row
+      .col-sm-2
+        h3.note Checkboxes
+        .checkbox
+          label
+            input(type='checkbox', value='')
+            | 										Enabled
+        .checkbox.disabled
+          label
+            input(type='checkbox', value='', disabled='')
+            | 										Disabled
+      .col-sm-2
+        h3.note Radios
+        .radio
+          label
+            input(type='radio', value='')
+            | 										Enabled
+        .radio.disabled
+          label
+            input(type='radio', value='', disabled='')
+            | 										Disabled
+      .col-sm-4
+        h3.note Inline Checkboxes
+        label.checkbox-inline
+          input#inlineCheckbox1(type='checkbox', value='option1')
+          |  Opt 1
+        label.checkbox-inline
+          input#inlineCheckbox2(type='checkbox', value='option2')
+          |  Opt 2
+        label.checkbox-inline
+          input#inlineCheckbox3(type='checkbox', value='option3')
+          |  Opt 3
+      .col-sm-4
+        h3.note Inline Radios
+        label.disabled.radio-inline
+          input#inlineRadio1(type='radio', name='inlineRadioOptions', value='option1', disabled='')
+          |  Opt 1
+        label.radio-inline
+          input#inlineRadio2(type='radio', name='inlineRadioOptions', value='option2')
+          |  Opt 2
+        label.radio-inline
+          input#inlineRadio3(type='radio', name='inlineRadioOptions', value='option3')
+          |  Opt 3
+    // /.row
+    h2.section-title(data-type='anchor') Select
+    .row
+      .col-xs-12
+        h3.note Select with chosen.js
+        p
+          | To apply chosen.js to and element add class
+          span.red '.chosen-select'
+          |  to the 'select' element.
+          kdb
+          label(for='multi') Multi-switch
+          select.chosen-select(name='', multiple='')
+            option(value='')
+            option(value='') Test
+            option(value='') Testing 2
+            option(value='')
+            option(value='')
+            | 								option
+          input#disabledInput.form-control(type='text', placeholder='Disabled input here...', disabled='')
+    // /.row
+    .row
+      .col-xs-12
+        form(role='form')
+          fieldset(disabled='')
+            .form-group
+              label(for='disabledTextInput') Disabled input
+              input#disabledTextInput.form-control(type='text', placeholder='Disabled input')
+            .form-group
+              label(for='disabledSelect') Disabled select menu
+              select#disabledSelect.form-control.chosen-select
+                option Disabled select
+            .checkbox
+              label
+                input(type='checkbox')
+                |  Can't check this
+            button.btn.btn-primary(type='submit') Submit
+    // /.row
+h2.section-title Static Control
+.app-block
+  h2.title Static Control
+  .content
+    .row
+      .col-xs-12
+        form.form-horizontal(role='form')
+          .form-group
+            label.col-sm-2.control-label Email
+            .col-sm-10
+              p.form-control-static email@example.com
+          .form-group
+            label.col-sm-2.control-label(for='inputPassword') Password
+            .col-sm-10
+              input#inputPassword.form-control(type='password', placeholder='Password')
+    .row
+      .col-xs-12
+        .form-group.has-success
+          label.control-label(for='inputSuccess1') Input with success
+          input#inputSuccess1.form-control(type='text')
+        .form-group.has-warning
+          label.control-label(for='inputWarning1') Input with warning
+          input#inputWarning1.form-control(type='text')
+        .form-group.has-error
+          label.control-label(for='inputError1') Input with error
+          input#inputError1.form-control(type='text')
+    .row
+      .col-xs-12
+        form.form-horizontal(role='form')
+          .form-group.has-success.has-feedback
+            label.control-label.col-sm-3(for='inputSuccess3') Input with success
+            .col-sm-9
+              input#inputSuccess3.form-control(type='text')
+              span.glyphicon.glyphicon-ok.form-control-feedback
+        input.form-control.input-lg(type='text', placeholder='.input-lg')
+        input.form-control(type='text', placeholder='Default input')
+        input.form-control.input-sm(type='text', placeholder='.input-sm')
+        select.form-control.input-lg
+          option input large
+        select.form-control
+          option input default
+        select.form-control.input-sm
+          option input small
+section.block
+  .app-block
+    .title test
+    .content
+      .row
+        .col-sm-6
+          label(for='multi') Multi-switch
+          .row
+            .col-xs-12
+              input.full-width(type='text', name='multi-single')
+          .row
+            .col-sm-6
+              input(type='text', name='multi-single')
+            .col-sm-6
+              input(type='text', name='multi-single')
+          .row
+            .col-xs-12
+              label(for='multi') Multi-switch
+              select.chosen-select(name='', multiple='')
+                option(value='')
+                option(value='') Test
+                option(value='') Testing 2
+                option(value='')
+                option(value='')
+                | 												option
+        .col-sm-6
+          label(for='textarea', width='100') Multi-switch
+          textarea.full-width(name='textarea')
+  .app-block
+    h2.title Buttons & Button Configurations
+    .content
+      h2.section-title Button Groups
+      .row
+        .col-sm-4
+          h3 Buttons Group
+          .btn-group
+            button.btn.btn-primary(type='button') Left
+            button.btn.btn-default(type='button') Middle
+            button.btn.btn-default(type='button') Right
+        .col-sm-4
+          h3 Justified button groups
+          .btn-group.btn-group-justified
+            .btn-group
+              button.btn.btn-default(type='button') Left
+            .btn-group
+              button.btn.btn-default(type='button') Middle
+            .btn-group
+              button.btn.btn-default(type='button') Right
+        // col-sm-4
+      // row
+      .row
+        .col-xs-12
+          h2.section-title Button Sizes
+        .col-sm-4
+          .btn-group.btn-group-lg
+            h3 Large
+            button.btn.btn-default(type='button') Left
+            button.btn.btn-default(type='button') Middle
+            button.btn.btn-default(type='button') Right
+        .col-sm-3
+          .btn-group
+            h3 Default
+            button.btn.btn-default(type='button') Left
+            button.btn.btn-default(type='button') Middle
+            button.btn.btn-default(type='button') Right
+        .col-sm-3
+          .btn-group.btn-group-sm
+            h3 Small
+            button.btn.btn-default(type='button') Left
+            button.btn.btn-default(type='button') Middle
+            button.btn.btn-default(type='button') Right
+        .col-sm-2
+          .btn-group.btn-group-xs
+            h3.small Extra Small
+            button.btn.btn-default(type='button') Left
+            button.btn.btn-default(type='button') Middle
+            button.btn.btn-default(type='button') Right
+      .row
+        .col-sm-5
+          h3 Button Toolbar
+          .btn-toolbar(role='toolbar')
+            .btn-group
+              button.btn.btn-default(type='button') 1
+              button.btn.btn-default(type='button') 2
+              button.btn.btn-default(type='button') 3
+              button.btn.btn-default(type='button') 4
+            .btn-group
+              button.btn.btn-default(type='button') 5
+              button.btn.btn-default(type='button') 6
+              button.btn.btn-default(type='button') 7
+            .btn-group
+              button.btn.btn-default(type='button') 8
+        .col-sm-3
+          h3 Buttons Vertical
+          .btn-group-vertical
+            button.btn.btn-default(type='button') Button
+            button.btn.btn-default(type='button') Button
+            .btn-group
+              button#btnGroupVerticalDrop1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                | Dropdown
+                span.caret
+              ul.dropdown-menu(role='menu', aria-labelledby='btnGroupVerticalDrop1')
+                li
+                  a(href='#') Dropdown link
+                li
+                  a(href='#') Dropdown link
+            button.btn.btn-default(type='button') Button
+            button.btn.btn-default(type='button') Button
+            .btn-group
+              button#btnGroupVerticalDrop2.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                | Dropdown
+                span.caret
+              ul.dropdown-menu(role='menu', aria-labelledby='btnGroupVerticalDrop2')
+                li
+                  a(href='#') Dropdown link
+                li
+                  a(href='#') Dropdown link
+            .btn-group
+              button#btnGroupVerticalDrop3.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                | Dropdown
+                span.caret
+              ul.dropdown-menu(role='menu', aria-labelledby='btnGroupVerticalDrop3')
+                li
+                  a(href='#') Dropdown link
+                li
+                  a(href='#') Dropdown link
+            .btn-group
+              button#btnGroupVerticalDrop4.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                | Dropdown
+                span.caret
+              ul.dropdown-menu(role='menu', aria-labelledby='btnGroupVerticalDrop4')
+                li
+                  a(href='#') Dropdown link
+                li
+                  a(href='#') Dropdown link
+        // col-sm-3
+      .row
+        .col-xs-12
+          .section-title Dropdowns
+        .col-sm-5
+          .row
+            .col-sm-5
+              h3 Dropdown
+              .dropdown
+                button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                  | Dropdown
+                  span.caret
+                ul.dropdown-menu(role='menu', aria-labelledby='dropdownMenu1')
+                  li.dropdown-header(role='presentation') Dropdown header
+                  li.divider(role='presentation')
+                  li(role='presentation')
+                    a(role='menuitem', tabindex='-1', href='#') Action
+                  li(role='presentation')
+                    a(role='menuitem', tabindex='-1', href='#') Another action
+                  li(role='presentation')
+                    a(role='menuitem', tabindex='-1', href='#') Something else here
+                  li.divider(role='presentation')
+                  li(role='presentation')
+                    a(role='menuitem', tabindex='-1', href='#') Separated link
+            .col-sm-7
+              h3 Nested Dropdown
+              .btn-group
+                button.btn.btn-default(type='button') 1
+                button.btn.btn-default(type='button') 2
+                .btn-group
+                  button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                    | Dropdown
+                    span.caret
+                  ul.dropdown-menu(role='menu')
+                    li.disabled(role='presentation')
+                      a(href='#') Dropdown link
+                    li
+                      a(href='#') Dropdown link
+        .col-sm-2
+          h3 Dropup
+          .btn-group.dropup
+            button.btn.btn-default(type='button') Dropup
+            button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+              span.caret
+              span.sr-only Toggle Dropdown
+            ul.dropdown-menu(role='menu')
+              li.disabled(role='presentation')
+                a(href='#') Dropdown link
+              li
+                a(href='#') Dropdown link
+        .col-sm-3
+          h3 Split Button Dropdowns
+          .btn-group
+            button.btn.btn-danger(type='button') Action
+            button.btn.btn-danger.dropdown-toggle(type='button', data-toggle='dropdown')
+              span.caret
+              span.sr-only Toggle Dropdown
+            ul.dropdown-menu(role='menu')
+              li
+                a(href='#') Action
+              li
+                a(href='#') Another action
+              li
+                a(href='#') Something else here
+              li.divider
+              li
+                a(href='#') Separated link
+      // .row
+      .row
+        .col-sm-8
+          h3 Single Button Dropdowns
+          .btn-group
+            button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+              | Action
+              span.caret
+            ul.dropdown-menu(role='menu')
+              li
+                a(href='#') Action
+              li
+                a(href='#') Another action
+              li
+                a(href='#') Something else here
+              li.divider
+              li
+                a(href='#') Separated link
+          .btn-group
+            button.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown')
+              | Action
+              span.caret
+            ul.dropdown-menu(role='menu')
+              li
+                a(href='#') Action
+              li
+                a(href='#') Another action
+              li
+                a(href='#') Something else here
+              li.divider
+              li
+                a(href='#') Separated link
+          .btn-group
+            button.btn.btn-success.dropdown-toggle(type='button', data-toggle='dropdown')
+              | Action
+              span.caret
+            ul.dropdown-menu(role='menu')
+              li
+                a(href='#') Action
+              li
+                a(href='#') Another action
+              li
+                a(href='#') Something else here
+              li.divider
+              li
+                a(href='#') Separated link
+          .btn-group
+            button.btn.btn-info.dropdown-toggle(type='button', data-toggle='dropdown')
+              | Action
+              span.caret
+            ul.dropdown-menu(role='menu')
+              li
+                a(href='#') Action
+              li
+                a(href='#') Another action
+              li
+                a(href='#') Something else here
+              li.divider
+              li
+                a(href='#') Separated link
+          .btn-group
+            button.btn.btn-warning.dropdown-toggle(type='button', data-toggle='dropdown')
+              | Action
+              span.caret
+            ul.dropdown-menu(role='menu')
+              li
+                a(href='#') Action
+              li
+                a(href='#') Another action
+              li
+                a(href='#') Something else here
+              li.divider
+              li
+                a(href='#') Separated link
+          .btn-group
+            button.btn.btn-danger.dropdown-toggle(type='button', data-toggle='dropdown')
+              | Action
+              span.caret
+            ul.dropdown-menu(role='menu')
+              li
+                a(href='#') Action
+              li
+                a(href='#') Another action
+              li
+                a(href='#') Something else here
+              li.divider
+              li
+                a(href='#') Separated link
+      // .row
+    // .content
+  .app-block
+    .content
+      .row
+        .input-group
+          span.input-group-addon @
+          input.form-control(type='text', placeholder='Username')
+        .input-group
+          input.form-control(type='text')
+          span.input-group-addon .00
+        .input-group
+          span.input-group-addon $
+          input.form-control(type='text')
+          span.input-group-addon .00
+      .row
+        .col-sm-4
+          .input-group.input-group-lg
+            span.input-group-addon @
+            input.form-control(type='text', placeholder='Username')
+        .col-sm-4
+          .input-group
+            span.input-group-addon @
+            input.form-control(type='text', placeholder='Username')
+        .col-sm-4
+          .input-group.input-group-sm
+            span.input-group-addon @
+            input.form-control(type='text', placeholder='Username')
+      .row
+        .col-sm-6
+          .input-group
+            span.input-group-addon
+              input(type='checkbox')
+            input.form-control(type='text')
+        .col-sm-6
+          .input-group
+            span.input-group-addon
+              input(type='radio')
+            input.form-control(type='text')
+        // .col-lg-6
+      // .row
+      .row
+        .col-sm-6
+          .input-group
+            span.input-group-btn
+              button.btn.btn-default(type='button') Go!
+            input.form-control(type='text')
+        .col-sm-6
+          .input-group
+            input.form-control(type='text')
+            span.input-group-btn
+              button.btn.btn-default(type='button') Go!
+        // .col-lg-6
+      // .row
+      .row
+        .col-sm-6
+          .input-group
+            .input-group-btn
+              button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                | Action
+                span.caret
+              ul.dropdown-menu(role='menu')
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li
+                  a(href='#') Separated link
+            input.form-control(type='text')
+        // .col-lg-6
+        .col-sm-6
+          .input-group
+            input.form-control(type='text')
+            .input-group-btn
+              button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                | Action
+                span.caret
+              ul.dropdown-menu.dropdown-menu-right(role='menu')
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li
+                  a(href='#') Separated link
+        // .col-lg-6
+      // .row
+      .row
+        .col-xs-12
+          ul.nav.nav-tabs(role='tablist')
+            li.active
+              a(href='#home', role='tab', data-toggle='tab') Home
+            li
+              a(href='#profile', role='tab', data-toggle='tab') Profile
+            li
+              a(href='#msgs', role='tab', data-toggle='tab') Messages
+            li
+              a(href='#settings', role='tab', data-toggle='tab') Settings
+          .tab-content
+            #home.tab-pane.active
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia tellus id arcu dapibus, ut accumsan arcu rutrum. Duis tempus nisl at justo rhoncus, eu ultricies enim sollicitudin. In hac habitasse platea dictumst. Aliquam consequat eleifend urna ac tempus. Aenean pellentesque consequat ipsum, et cursus dui egestas id. Donec libero quam, sodales nec enim ut, iaculis lobortis felis. Ut dictum, augue a laoreet laoreet, ligula justo vulputate sem, et rutrum sapien purus et enim. Suspendisse lobortis nibh quis nisi interdum, at facilisis nisi consectetur. Integer tincidunt nunc enim, ut mollis leo congue quis. Donec porta vitae quam quis feugiat. Aliquam vel imperdiet quam.
+              p
+                | Aliquam ultricies sem a velit interdum, quis accumsan purus mollis. Aliquam vitae odio leo. Fusce commodo mauris diam, vitae tempus velit facilisis in. Quisque rutrum tincidunt porta. Cras eget mi quis ipsum egestas vehicula. Curabitur molestie elementum metus, nec porttitor arcu adipiscing sit amet. Curabitur justo ante, porttitor non tellus at, pellentesque vulputate diam. Quisque vel eros quis nunc pellentesque viverra sit amet sed tortor. In elit sem, rhoncus ut justo sed, porttitor hendrerit urna. Cras eros libero, interdum et pulvinar quis, hendrerit sed leo. Mauris feugiat fermentum suscipit.
+              p
+                | Quisque suscipit ornare aliquam. In eu ornare leo, vehicula vulputate sem. Nam risus tellus, laoreet vitae libero vel, accumsan sodales nibh. Pellentesque libero ipsum, vestibulum a scelerisque sed, euismod at orci. Duis at neque in elit blandit feugiat et vel nunc. Sed eu semper velit. Fusce dolor massa, ultrices ut varius pulvinar, varius vitae metus. Nunc facilisis semper vehicula. Vivamus ultricies dolor tempor porta porttitor. Sed quis ullamcorper mi, et porttitor justo. Vestibulum justo diam, imperdiet ac enim eget, sollicitudin sagittis turpis. Cras mollis sit amet ante id tristique. Aenean faucibus felis velit, ut scelerisque quam ultrices nec.
+            #profile.tab-pane profile stuff
+            #msgs.tab-pane messages stuff messages stuff messages stuff
+            #settings.tab-pane settings stuff
+      script.
+        chrometwo_require(['jquery'], function ($) {
+        $('.nav-tabs a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+        });
+        });
+    // .content
 .row
-  .col-md-12
-    .title {{'app-title'|translate}}
-  .col-md-6
-    input(ng-model="test")
-  .col-md-6
-    div {{ test }}
+  .col-sm-6
+    h2
+      | Layout Content - the
+      span.red .block
+      |  selector
+    p
+      | Use the class
+      strong .block
+      |  as the basic building block. '.block' adds the universal bottom margin to block level element and can be used to designate sections, within sections, or both. Basically, '.block' keeps things nicely aligned.
+  .col-sm-6
+    pre.
+h2#documentation.section-title.red(data-type='anchor') Documentation
+.row
+  .col-sm-6
+    .app-block
+      .title test
+      .content
+        .app-block
+          .title test
+          .content
+            label(for='input') Input
+            input(type='text', placeholder='Text Input Example')
+            label(for='dropdown') Dropdown
+            select.chosen-select(name='dropdown')
+              option(name='', id='') Option 1
+              option(name='', id='') Option 2
+              option(name='', id='') Option 3
+        .app-block
+          .title test
+          .content test
+        p
+          em.red
+            | It can be wrapped in a row, but the content must be wrapper in a
+            strong .col-* class.
+          |  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero urna, iaculis gravida tempor sit amet, sagittis non diam. Nullam dolor tortor, feugiat id pellentesque id, commodo vitae dolor. Etiam sit amet commodo augue. Vestibulum molestie felis eget fringilla interdum. Duis laoreet gravida pellentesque. Suspendisse vitae ligula sed leo pellentesque commodo. Cras cursus bibendum dolor quis semper. Duis et suscipit erat. Nam vel justo sit amet augue iaculis sagittis. Suspendisse id nunc augue. Praesent ac vehicula massa.
+  .app-block.app-block-guided.col-sm-6
+    h2.title Multi-switch (recommended) or Single-switch
+    .content
+      .row
+        .col-sm-6
+          p Are you trying to increase availability or increase bandwidth?
+          p
+            | High-availability and/or Multi-switch configurations will provide resiliency against both NIC & switch outage, but will not allow both network interfaces to actively send traffic at the same time.
+        .col-sm-6.center
+          .row
+            .col-xs-6.center
+              label(for='multi') Multi-switch
+              input(type='radio', name='multi-single')
+            .col-xs-6
+              label(for='single') Single-switch
+              input(type='radio', name='multi-single')
+      button.btn.btn-primary.submit(type='submit') Next
+.block.border-bottom.border-bottom
+  h2 Text Examples
+  h3
+    | 1 Column -
+    span.red Notice this text block is not wrapped in a .row class
+  p
+    em.red
+      | It can be wrapped in a row, but the content must be wrapper in a
+      strong .col-* class.
+    |  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero urna, iaculis gravida tempor sit amet, sagittis non diam. Nullam dolor tortor, feugiat id pellentesque id, commodo vitae dolor. Etiam sit amet commodo augue. Vestibulum molestie felis eget fringilla interdum. Duis laoreet gravida pellentesque. Suspendisse vitae ligula sed leo pellentesque commodo. Cras cursus bibendum dolor quis semper. Duis et suscipit erat. Nam vel justo sit amet augue iaculis sagittis. Suspendisse id nunc augue. Praesent ac vehicula massa.
+  h3
+    | 2 Columns -
+    span.red These blocks are wrapped in a .row class
+  .row
+    .col-sm-6
+      p
+        | Pellentesque sit amet sodales purus, quis tristique enim. Phasellus ut bibendum nibh. Integer feugiat adipiscing porta. In urna erat, molestie at felis non, pellentesque pulvinar erat. Integer sed porta diam, at egestas purus. Suspendisse commodo vestibulum turpis, non egestas tortor porttitor id. Praesent risus ligula, bibendum sit amet nulla vitae, ornare feugiat velit.
+    .col-sm-6
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero urna, iaculis gravida tempor sit amet, sagittis non diam. Nullam dolor tortor, feugiat id pellentesque id, commodo vitae dolor. Etiam sit amet commodo augue.
+  .row
+    .col-sm-4
+      h3 Title
+      p
+        | Pellentesque sit amet sodales purus, quis tristique enim. Phasellus ut bibendum nibh. Integer feugiat adipiscing porta. In urna erat, molestie at felis non, pellentesque pulvinar erat. Integer sed porta diam, at egestas purus. Suspendisse commodo vestibulum turpis, non egestas tortor porttitor id. Praesent risus ligula, bibendum sit amet nulla vitae, ornare feugiat velit.
+    .col-sm-4
+      .group.grey
+        h3.red Title Red
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero urna, iaculis gravida tempor sit amet, sagittis non diam. Nullam dolor tortor, feugiat id pellentesque id, commodo vitae dolor. Etiam sit amet commodo augue.
+    .col-sm-4
+      h3
+        strong Title
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero urna, iaculis gravida tempor sit amet, sagittis non diam. Nullam dolor tortor, feugiat id pellentesque id, commodo vitae dolor. Etiam sit amet commodo augue.
+h2#app-blocks.section-title.red(data-type='anchor') App Blocks
+.app-block
+  h2.title 1 Column App Block
+  .content
+    | test
+.row
+  .col-sm-6
+    .app-block
+      h2.title 2 Column App Block
+      .content
+        | test
+  .col-sm-6
+    .app-block.grey
+      h2.title 2 Column App Block
+      .content.content-grey
+        | test
+h3 3 Column App Blocks
+.row
+  .col-sm-4
+    .app-block
+      h2.title title 1
+      .content
+        | test
+  .col-sm-4
+    .app-block
+      h2.title title 1
+      .content.grey
+        | test
+  .col-sm-4
+    .app-block
+      h2.title title 1
+      .content.grey
+        | test
+.row
+  .col-sm-8
+    .app-block
+      h2.title title 1
+      .content
+        .app-block
+          h2.title Nesting App blocks
+          .content Notice this app block isn't wrapped with a row
+        .row
+          .col-sm-6
+            .app-block
+              h2.title Title 2
+              .content content 2
+          .col-sm-6
+            .app-block
+              h2.title Title 2
+              .content content 2
+.row.push-bottom
+  .col-xs-2
+    .thumbnail
+      img(src='//placehold.it/300x200')
+  .col-xs-4
+    .thumbnail
+      img(src='//placehold.it/300x200')
+  .col-xs-2
+    .thumbnail
+      img(src='//placehold.it/300x200')
+  .col-xs-4
+    .thumbnail
+      img(src='//placehold.it/300x200')
+.row(style='position: relative;')
+  div(data-ui-component='app-block', data-name='doc-block-split1')
+    .col-sm-6
+      .doc-block
+        h2.title Overview - (Split Example)
+        .content
+          p
+            strong Document blocks are meant to provide textual information to the user.
+            em
+              | They have a title, which can be omitted in favor of an inline header or no header at all.
+            a(href='#') Nulla facilisi. Vivamus nunc nibh, tristique
+            |  cursus lacus a, scelerisque posuere erat. Integer sed pharetra ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc eu eleifend diam. Donec viverra suscipit mi non euismod. Nulla volutpat scelerisque ultricies. Ut in turpis ut velit tempus tincidunt ac at justo. Nullam ac auctor lectus.
+          p
+            | Donec in venenatis sapien, et sollicitudin tortor. Proin id tempor metus. Nulla molestie tellus a venenatis commodo. Donec tincidunt imperdiet mi quis volutpat. Nullam interdum purus eget massa iaculis fringilla. Etiam diam risus, pellentesque eget sagittis sed, lacinia vestibulum eros.
+          button.btn.btn-primary.pull-right This is the button text
+    .col-sm-6
+      .doc-block
+        h2.title Split Example - Column 2
+        .content This is the content
+  .precode-block.precode-row(data-ui-component='copy-code', data-rows='20', rel='doc-block-split1')
+div(data-ui-component='app-block', data-name='doc-block1')
+  //
+    Note: uncomment this code. The result is exactly same with or without the use of a row. This is why full width elements do not need 'row' wrapper.
+    <div class="row">
+    <div class="col-xs-12">
+  .doc-block
+    h2.title This is full width Document Block. Notice that it is not wrapper in a 'row'
+    .content
+      | Anything that is full width does not need to be wrapper in a row element. It also does not need to be defined as a .col-*, block level elements are responsive by nature.
+  //
+    </div>
+    </div>
+  .precode-block(data-ui-component='copy-code', data-rows='8', rel='doc-block1')
+.app-block
+  h2 No need to use a row here, the 'Elements' App Block is full width.
+  .title Elements
+  .content
+    h3 Tables
+    .row
+      h3.col-xs-12 We need a row here because we're splitting the content
+      .col-sm-6
+        #doc.doc-block
+          h2.title The following is an example of a basic 'App Block'
+          .content
+        //
+          <div data-ui-component="app-block" data-name="block1">
+          <div class="app-block">
+          <h2 class="title">Table - Standard</h2>
+          <div class="content">
+          <table class="table">
+          <thead>
+          <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          </tr>
+          <tr>
+          <td>2</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+          </tr>
+          <tr>
+          <td>3</td>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+          </tr>
+          </tbody>
+          </table>
+          </div>
+          </div>
+          </div>
+          <div class="precode-block" data-ui-component="copy-code" data-rows="20" rel="block1"></div>
+          <div data-ui-component="app-block" data-name="block2">
+          <div class="app-block">
+          <h2 class="title">Table Style - Table Striped</h2>
+          <div class="content">
+          <table class="table table-striped">
+          <thead>
+          <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          </tr>
+          <tr>
+          <td>2</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+          </tr>
+          <tr>
+          <td>3</td>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+          </tr>
+          </tbody>
+          </table>
+          </div>
+          </div>
+          </div>
+          Show Code Button
+          <div class="precode-block" data-ui-component="copy-code" data-rows="20" rel="block2"></div>
+          <div class="app-block">
+          <h2 class="title">Table Style - Table Striped</h2>
+          <div class="content">
+          <table class="table table-bordered">
+          <thead>
+          <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td rowspan="2">1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          </tr>
+          <tr>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@TwBootstrap</td>
+          </tr>
+          <tr>
+          <td>2</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+          </tr>
+          <tr>
+          <td>3</td>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+          </tr>
+          </tbody>
+          </table>
+          </div>
+          </div>
+          <div class="app-block">
+          <h2 class="title">Table Style - Table Responsive</h2>
+          <div class="content table-responsive">
+          <table class="table table-striped">
+          <thead>
+          <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          </tr>
+          <tr>
+          <td>2</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+          </tr>
+          <tr>
+          <td>3</td>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+          </tr>
+          </tbody>
+          </table>
+          </div>
+          </div>
+      .col-sm-6
+        div(data-ui-component='app-block', data-name='content-grey')
+          .app-block
+            .content.content-grey
+              form(role='form')
+                .form-group
+                  label(for='exampleInputEmail1') Email address
+                  input#exampleInputEmail1.form-control(type='email', placeholder='Enter email')
+                .form-group
+                  label(for='exampleInputPassword1') Password
+                  input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+                .form-group
+                  label(for='exampleInputFile') File input
+                  input#exampleInputFile(type='file')
+                  p.help-block Example block-level help text here.
+                .checkbox
+                  label
+                    input(type='checkbox')
+                    |  Check me out
+                button.btn.btn-default(type='submit') Submit
+        // data-ui-component
+        // Show Code Button
+        .precode-block(data-ui-component='copy-code', data-rows='20', rel='content-grey')
+        div(data-ui-component='app-block', data-name='content-grey2')
+          .app-block
+            .content
+              .checkbox
+                label
+                  input(type='checkbox', value='')
+                  | 													Option one is this and that—be sure to include why it's great
+              .radio
+                label
+                  input#optionsRadios1(type='radio', name='optionsRadios', value='option1', checked='')
+                  | 													Option one is this and that—be sure to include why it's great
+              .radio
+                label
+                  input#optionsRadios2(type='radio', name='optionsRadios', value='option2')
+                  | 													Option two can be something else and selecting it will deselect option one
+        // data-ui-component
+        .precode-block(data-ui-component='copy-code', data-rows='36', rel='content-grey2')
+        .app-block
+          .content
+            form(role='form')
+              label.checkbox-inline
+                input#inlineCheckbox1(type='checkbox', value='option1')
+                |  Option 1
+              label.checkbox-inline
+                input#inlineCheckbox2(type='checkbox', value='option2')
+                |  Option 2
+              label.checkbox-inline
+                input#inlineCheckbox3(type='checkbox', value='option3')
+                |  Option 3
+        .app-block
+          h2.title Inline Forms
+          .content
+            select.form-control
+              option 1
+              option 2
+              option 3
+              option 4
+              option 5
+            select.form-control(multiple='')
+              option 1
+              option 2
+              option 3
+              option 4
+              option 5
+    .row.doc-blocks
+      .col-xs-12
+        .content
+          .row
+            .doc-block.col-sm-6
+              h1 Abstract
+              p Here you will find...
+            .doc-block.col-sm-6
+              h2 Using Rows in Your Markup
+              p A common mistake when using bootstrap is the overuse of rows.
+    .row.doc-blocks
+      .col-xs-12
+        .content
+          .row
+            .doc-block.col-sm-6
+              .group.group-grey
+                h2 Using Rows in Your Markup
+                p
+                  | A common mistake when using bootstrap is the overuse of rows. Rows have negative left and right margins that when combined with cols-* styles are countered to form a nice gutter. The issue occurs when rows are used as wrappers, but not col-* container is present within that row. The margins then appear to be off.
+            .doc-block.col-sm-6
+              h2 Using Rows in Your Markup
+              p A common mistake when using bootstrap is the overuse of rows.
+.row
+  .col-xs-12
+    h2 Nested App Blocks
+  .col-xs-12.app-block
+    .title Block title
+    .content
+      .row
+        .col-sm-6
+          .group.group-grey
+            h1 Header 1
+            h2 Header 2
+            h3 Header 3
+        .app-block.col-sm-6
+          .title This is the title test
+          .content This is the content
+          .title This is the title test
+          .content This is the content
+          .title This is the title test
+          .content This is the content
+          .title This is the title test
+          .content This is the content
+          .precode-block
+            button.btn.btn-primary.code-toggle
+              | <code>
+            pre.precode.
+        .precode-block
+          button.btn.btn-primary.code-toggle
+            | <code>
+          pre.precode.
+      .row
+        .col-sm-6
+          .group
+            h4 Header 4
+            h5 Header 5
+            h6 Header 6
+      .row
+        .col-xs-12
+          h2 Nesting Content
+        .col-sm-4
+          .group
+            h3 Standard Group
+        .col-sm-4
+          .group.group-grey
+            strong No Border
+        .col-sm-4
+          .group.no-border
+            | test
+  .row
+    .col-sm-6
+      .app-block
+        .title Column 1
+        .content
+          .group
+            h4 Close buttons
+            button.btn.btn-default.btn-remove.close(ng-click='remove_domain(domain)') Close
+    .col-sm-6
+      .app-block
+        .title Column 2
+        .content
+          .group
+            | Testing the Content
+            button.btn.btn-default.btn-remove.close(ng-click='remove_domain(domain)') Close
+  .row
+    .app-block.col-sm-4
+      .title Column 1
+      .content
+        .group Testing the content
+    .app-block.col-sm-4
+      .title Column 2
+      .content
+        .group Testing the Content
+    .app-block.col-sm-4
+      .title Column 3
+      .content.emphasize
+        .group Testing the Content
+  .row
+    .col-sm-6.app-block
+      h2.title Domain configuration
+      .content
+        .group.group-simple
+          | This is an example of a really long title. It make sense for the title to be width for flexibility.
+        form.group.group-grey(role='form')
+          .form-group
+            label
+              | This is an example of a really long title. It make sense for the title to be
+              | width for flexibility.
+            input.col-xs-12(type='text', placeholder='Placeholder')
+          // row
+        form.group
+          .form-group
+            label
+              | This is an example of a really long title. It make sense for the title to be
+              | width for flexibility.
+            input.col-xs-12(type='text', placeholder='Placeholder')
+          .row
+            .col-sm-6
+              .form-group
+                label
+                  | This is an example of a really long title. It make sense for the title to be
+                  | width for flexibility.
+                input(type='text', placeholder='Placeholder')
+            // col-sm-6
+            .col-sm-6
+              .form-group
+                label
+                  | This is an example of a really long title. It make sense for the title to be
+                  | width for flexibility.
+                input(type='text', placeholder='Placeholder')
+            // col-sm-6
+          // row
+    .col-sm-6.app-block
+      form.form-block(role='form')
+        h2.title Title Form Group
+        .content
+          .group.form-group
+            .btn-group
+              a.btn.btn-default(href='#', role='button') Link
+              button.btn.btn-default(type='submit') Button
+            input(type='text', placeholder='Placeholder')
+          // block-content
+          .group.form-group.split
+            label.col-sm-2 Backend
+            .col-sm-10.btn-group
+              // ngRepeat: type in backends
+              button.btn.ng-scope.ng-binding(ng-class='{active: domain.backend === type}', ng-repeat='type in backends', ng-click='domain.backend = type') rid
+              // end ngRepeat: type in backends
+              button.btn.ng-scope.ng-binding(ng-class='{active: domain.backend === type}', ng-repeat='type in backends', ng-click='domain.backend = type') ad
+              // end ngRepeat: type in backends
+          .group.form-group
+            h2 Header
+            div
+              label
+                | This is an example of a really long title. It make sense for the title to be
+                | width for flexibility.
+              input(type='text', placeholder='Placeholder')
+            // block-content
+          // form-group
+        // content
