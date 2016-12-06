@@ -43,7 +43,7 @@ module.exports = function(grunt) {
     },
     open: {
       server: {
-        url: 'https://jjshi.usersys.redhat.com:4443/labs/<%= pkg.name %>/'
+        url: 'https://jjshi.usersys.redhat.com:5443/labs/<%= pkg.name %>/'
       }
     },
     watch: {
